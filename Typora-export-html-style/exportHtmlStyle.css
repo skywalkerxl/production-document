@@ -1,7 +1,13 @@
+html {
+    overflow-x: initial !important;}
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --code-block-bg-color: inherit; }
+
 body, ul, h1, h2, h3, h4, h5, h6, p {
     margin: 0; padding: 0;
 }
-
 
 html {
     font-size: 14px;
@@ -80,15 +86,44 @@ table.md-table td { min-width: 80px; }
 div.hr:focus { cursor: none; }
 pre { white-space: pre-wrap; }
 .CodeMirror-gutters { margin-right: 4px; }
-.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: var(--code-block-bg-color); position: relative !important; }
-.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
-.md-fences .CodeMirror.CodeMirror-wrap { top: -1.6em; margin-bottom: -1.6em; }
-.md-fences.mock-cm { white-space: pre-wrap; }
-.show-fences-line-number .md-fences { padding-left: 0px; }
-.show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
-.footnotes { opacity: 0.8; font-size: 0.9rem; padding-top: 1em; padding-bottom: 1em; }
-.footnotes + .footnotes { margin-top: -1em; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: transparent; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: normal; text-align: left; box-sizing: content-box; direction: ltr; }
+.md-fences {
+    font-size: 0.9rem;
+    display: block;
+    break-inside: avoid;
+    text-align: left;
+    overflow: visible;
+    white-space: pre;
+    background: var(--code-block-bg-color);
+    position: relative !important; }
+.md-diagram-panel {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 0px; padding-bottom: 8px;
+    overflow-x: auto; }
+.md-fences .CodeMirror.CodeMirror-wrap {
+    top: -1.6em; margin-bottom: -1.6em; }
+.md-fences.mock-cm {
+    white-space: pre-wrap; }
+.show-fences-line-number .md-fences {
+    padding-left: 0px; }
+.show-fences-line-number .md-fences.mock-cm {
+    padding-left: 40px; }
+.footnotes {
+    opacity: 0.8; font-size: 0.9rem; padding-top: 1em; padding-bottom: 1em; }
+.footnotes + .footnotes {
+    margin-top: -1em; }
+.md-reset {
+    margin: 0px; padding: 0px; border: 0px; outline: 0px;
+    vertical-align: top;
+    background: transparent;
+    text-decoration: none; text-shadow: none;
+    float: none; position: static;
+    width: auto; height: auto;
+    white-space: nowrap; cursor: inherit;
+    -webkit-tap-highlight-color: transparent;
+    line-height: normal; font-weight: normal; text-align: left;
+    box-sizing: content-box; direction: ltr; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li p, li .mathjax-block { margin: 0.5rem 0px; }
@@ -96,6 +131,7 @@ li { margin: 0px; position: relative; }
 blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; }
+/* 打印媒体 样式 */
 @media print {
     html, body { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
     .typora-export * { -webkit-print-color-adjust: exact; }
@@ -106,6 +142,7 @@ blockquote > :first-child { margin-top: 0px; }
     .typora-export #write::after { height: 0px; }
     @page { margin: 20mm 0mm; }
 }
+
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
 pre.md-meta-block { font-size: 0.8rem; min-height: 2.86rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
@@ -206,7 +243,13 @@ table tr td { border: 1px solid rgb(204, 204, 204); text-align: left; margin: 0p
 table tr th:first-child, table tr td:first-child { margin-top: 0px; }
 table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
 .CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); }
-.md-fences, code, tt { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 4px 0px; font-size: 0.9em; }
+.md-fences, code, tt {
+    border: 1px solid rgb(221, 221, 221);
+    background-color: rgb(248, 248, 248);
+    border-radius: 3px;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    padding: 2px 4px 0px;
+    font-size: 0.9em; }
 .md-fences { margin-bottom: 15px; margin-top: 15px; padding: 8px 1em 6px; }
 .task-list { padding-left: 0px; }
 .task-list-item { padding-left: 32px; }

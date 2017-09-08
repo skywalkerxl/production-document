@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17145f9c-129b-4216-9854-7be7df989410" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Typora-export-html-style/exportHtmlStyle.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ERP/SmartFactory/~$工厂产品文档.docx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ERP/SmartFactory/智慧工厂产品文档.docx" afterPath="$PROJECT_DIR$/ERP/SmartFactory/智慧工厂产品文档.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Typora-export-html-style/IOStocksStatistics.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Typora-export-html-style/InStocks.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Typora-export-html-style/outSearch.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Typora-export-html-style/outStocks.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Typora-export-html-style/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Typora-export-html-style/TextOperate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Typora-export-html-style/测试文档.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ERP/.idea/workspace.xml" afterPath="$PROJECT_DIR$/ERP/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ERP/FinishedProductIOStocksStatistics/成品出入库统计.html" afterPath="$PROJECT_DIR$/ERP/FinishedProductIOStocksStatistics/成品出入库统计.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Typora-export-html-style/exportHtmlStyle.css" afterPath="$PROJECT_DIR$/Typora-export-html-style/exportHtmlStyle.css" />
     </list>
     <ignored path="production-document.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,12 +33,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="exportHtmlStyle.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="exportHtmlStyle.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Typora-export-html-style/exportHtmlStyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="213" column="38" selection-start-line="213" selection-start-column="38" selection-end-line="213" selection-end-column="38" />
+            <state relative-caret-position="119">
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="测试文档.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Typora-export-html-style/测试文档.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextOperate.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Typora-export-html-style/TextOperate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#48#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,6 +71,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -51,6 +83,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Typora-export-html-style/exportHtmlStyle.css" />
+        <option value="$PROJECT_DIR$/Typora-export-html-style/TextOperate.js" />
+        <option value="$PROJECT_DIR$/Typora-export-html-style/测试文档.html" />
       </list>
     </option>
   </component>
@@ -156,6 +190,12 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="H:\node\node.exe" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyRepository\production-document\Typora-export-html-style" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -216,12 +256,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504832629640</updated>
-      <workItem from="1504832631118" duration="118000" />
+      <workItem from="1504832631118" duration="1087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118000" />
+    <option name="totallyTimeSpent" value="1087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1312" y="-8" width="1320" height="784" extended-state="6" />
@@ -255,8 +295,26 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Typora-export-html-style/exportHtmlStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="213" column="38" selection-start-line="213" selection-start-column="38" selection-end-line="213" selection-end-column="38" />
+        <state relative-caret-position="119">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Typora-export-html-style/TextOperate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Typora-export-html-style/测试文档.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
           <folding />
         </state>
       </provider>
