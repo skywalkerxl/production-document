@@ -37,6 +37,13 @@ body.typora-export {
     .CodeMirror-gutters { display: none !important; }
 }
 .typora-export #write { margin: 0px auto; }
+/************************************************************************
+
+  正文文档部分内容
+
+*************************************************************************/
+
+/* 添加 30px 的上边距 */
 #write > p:first-child,
 #write > ul:first-child,
 #write > pre:first-child,
@@ -51,11 +58,40 @@ img {
     vertical-align: middle;
     box-shadow: 0 0 20px 0;
     border-radius: 10px;}
-input, button, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
-input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
-::before, ::after, * { box-sizing: border-box; }
-#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre { width: inherit; }
-#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { position: relative; }
+
+input,
+button,
+select,
+textarea {
+    color: inherit;
+    font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+
+input[type="checkbox"],
+input[type="radio"] {
+    line-height: normal; padding: 0px; }
+
+::before,
+::after,
+* { box-sizing: border-box; }
+
+#write p,
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6,
+#write div,
+#write pre { width: inherit; }
+
+#write p,
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 { position: relative; }
+
 h1 { font-size: 2rem; }
 h2 { font-size: 1.8rem; }
 h3 { font-size: 1.6rem; }
@@ -67,25 +103,48 @@ p {
     -webkit-margin-after: 1rem;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px; }
+
 .typora-export p { white-space: normal; }
-.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0rem; -webkit-margin-after: 0rem; }
+
+.mathjax-block {
+    margin-top: 0px; margin-bottom: 0px;
+    -webkit-margin-before: 0rem; -webkit-margin-after: 0rem; }
 .hidden { display: none; }
-.md-blockmeta { color: rgb(204, 204, 204); font-weight: bold; font-style: italic; }
+.md-blockmeta {
+    color: rgb(204, 204, 204); font-weight: bold; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; }
-#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
-tr { break-inside: avoid; break-after: auto; }
-thead { display: table-header-group; }
-table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
-table.md-table td { min-width: 80px; }
-.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
-.CodeMirror { text-align: left; }
-.CodeMirror-placeholder { opacity: 0.3; }
-.CodeMirror pre { padding: 0px 4px; }
-.CodeMirror-lines { padding: 0px; }
-div.hr:focus { cursor: none; }
-pre { white-space: pre-wrap; }
-.CodeMirror-gutters { margin-right: 4px; }
+sup.md-footnote {
+    padding: 2px 4px;
+    background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85);
+    border-radius: 4px; }
+#write input[type="checkbox"] {
+    cursor: pointer;
+    width: inherit; height: inherit; margin: 4px 0px 0px; }
+tr {
+    break-inside: avoid; break-after: auto; }
+thead {
+    display: table-header-group; }
+table {
+    border-collapse: collapse; border-spacing: 0px;
+    width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td {
+    min-width: 80px; }
+.CodeMirror-gutters {
+    border-right: 0px; background-color: inherit; }
+.CodeMirror {
+    text-align: left; }
+.CodeMirror-placeholder {
+    opacity: 0.3; }
+.CodeMirror pre {
+    padding: 0px 4px; }
+.CodeMirror-lines {
+    padding: 0px; }
+div.hr:focus {
+    cursor: none; }
+pre {
+    white-space: pre-wrap; }
+.CodeMirror-gutters {
+    margin-right: 4px; }
 .md-fences {
     font-size: 0.9rem;
     display: block;
@@ -114,7 +173,8 @@ pre { white-space: pre-wrap; }
 .footnotes + .footnotes {
     margin-top: -1em; }
 .md-reset {
-    margin: 0px; padding: 0px; border: 0px; outline: 0px;
+    margin: 0px; padding: 0px;
+    border: 0px; outline: 0px;
     vertical-align: top;
     background: transparent;
     text-decoration: none; text-shadow: none;
@@ -131,6 +191,7 @@ li { margin: 0px; position: relative; }
 blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; }
+
 /* 打印媒体 样式 */
 @media print {
     html, body { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
