@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="exportHtmlStyle.css">
 </head>
 <body class='typora-export'>
-<div  id='write'  class = 'is-node'>
+<div  id='write'  class='is-node'>
     <h1><a name='header-n0' class='md-header-anchor '></a>成品出入库统计</h1>
     <h2><a name='header-n2' class='md-header-anchor '></a>菜单首页</h2>
     <p>依次点击主菜单下的【生产管理】--&gt;【成品出入库统计】进入到菜单首页</p>
@@ -29,6 +29,17 @@
     <p>搜索框支持多关键字搜索，关键字之间使用空格隔开,示例如下。</p>
     <p><img src='outSearch.png' alt='' /></p>
 </div>
+<div id="page-right">
+    <div id="Catalog-box">
+        <strong>成品出入库统计</strong>
+    </div>
+</div>
+<script src="jquery-1.11.1.min.js"></script>
 <script src="TextOperate.js"></script>
+<script>
+    $(function(){
+        $.CateNav('#write','#Catalog-box');//第一个参数为存放文章内容的box,第二个参数为存放生成目录的box
+    })
+</script>
 </body>
 </html>

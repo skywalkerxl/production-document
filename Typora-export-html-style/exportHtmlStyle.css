@@ -5,9 +5,23 @@ html {
     --text-color: #333333;
     --code-block-bg-color: inherit; }
 
+
+/************************************************************************
+
+  默认样式重置
+
+*************************************************************************/
 body, ul, h1, h2, h3, h4, h5, h6, p {
     margin: 0; padding: 0;
 }
+
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
 
 html {
     font-size: 14px;
@@ -24,7 +38,7 @@ a:active, a:hover {
     background: rgb(181, 214, 252);
     text-shadow: none; }
 #write {
-    margin: 0px auto; height: auto; width: inherit;
+    margin-top:0; margin-left: 280px; height: auto; width: inherit;
     word-break: normal; word-wrap: break-word;
     position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; }
 .for-image #write {
@@ -36,7 +50,11 @@ body.typora-export {
     .CodeMirror-sizer { margin-left: 0px !important; }
     .CodeMirror-gutters { display: none !important; }
 }
-.typora-export #write { margin: 0px auto; }
+.typora-export #write { }
+
+
+
+
 /************************************************************************
 
   正文文档部分内容
@@ -262,12 +280,16 @@ a.md-print-anchor { border-width: initial !important; border-style: none !import
 @font-face { font-family: "Open Sans"; font-style: italic; font-weight: bold; src: local("Open Sans Bold Italic"), url("./github/700i.woff") format("woff"); }
 html { font-size: 16px; }
 body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
-#write { max-width: 860px; margin: 0px auto; padding: 20px 30px 100px; }
+#write { max-width: 860px;padding: 20px 30px 100px; }
 #write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
 body > :first-child { margin-top: 0px !important; }
 body > :last-child { margin-bottom: 0px !important; }
 a { color: rgb(65, 131, 196); }
-h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    margin-top: 1rem; margin-bottom: 1rem;
+    font-weight: normal; line-height: 1.4;
+    cursor: text; }
 h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
 h1 tt, h1 code { font-size: inherit; }
 h2 tt, h2 code { font-size: inherit; }
@@ -341,3 +363,42 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 .file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
 .mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
 .md-lang { color: rgb(180, 101, 77); }
+
+/************************************************************************
+
+  目录部分
+
+*************************************************************************/
+#Catalog-box {
+    position:fixed; width: 270px; height: 100%;
+    left: 0; top:0;  padding-top: 90px; padding-left: 20px;
+    overflow: auto;
+    border-right:3px solid #ccc;
+}
+#Catalog-box a{
+    color: #000;
+}
+#Catalog-box a:hover{
+    color:#136ec2;
+}
+#Catalog-box strong {
+    margin-left: 10px;
+    font-size: 20px; font-weight: bold;
+}
+#Catalog-box .cate-item1 span{
+    color: #999;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 14px;
+    padding-right: 5px;
+}
+#Catalog-box .cate-item2{
+    padding-left:20px;
+}
+#Catalog-box .cate-item2 span{
+    font-weight: 500;
+}
+#Catalog-box dd.active,
+#Catalog-box dd.active a{
+    color:#136ec2;
+}
