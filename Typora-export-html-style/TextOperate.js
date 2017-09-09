@@ -16,14 +16,26 @@ jQuery.CateNav=function(elem1,elem2){
         $(elem1).html(content.replace(reg, '><'));
     }
 
+    // 为目录添加标题
+    var addNavTitle = function () {
+        var headTitle = '<strong></strong>';
+        var headContent = $(elem1).html().match(/(\<h1[^>]*>.*?<\/h1>)/g); //获取包含标签的标题内容
+        var tags = /[^<>]+|<(\/?)([A-Za-z]+)([^<>]*)>/g;
+        var a = headContent[0].match(tags); // 保存支离出来的标签与文本碎片
+        $.each( a, function(i,c){
+            if( !/<(?:.|\s)*?/.test(c)){
+                headTitle = '<strong>'+ c +'</strong>';
+            }
+        } );
+        $(elem2).append(headTitle);
+    }
+
     // 添加导航
-    var addNav=function(){
+    var addNav = function(){
         var i1 = 0, // 用于计数
             i2 = 0,
             n1 = 0,
             n2 = 0;
-
-        var headTitle = '';
 
         var temp = '<dl style="display:block;">'; // temp 用于保存菜单索引
         var cateList = $(elem1).html().match(/(<h[2-3][^>]*>.*?<\/h[2-3]>)/ig); // cateList 用于保存 h2 或 h3 标签的元素
@@ -36,7 +48,7 @@ jQuery.CateNav=function(elem1,elem2){
                 i1++;
             }else{ // 若是 h3 标签
                 n2++;
-                temp += '<dd class="cate-item2"><span>'+n1+'.'+n2+'</span><a href="#'+n1+'_'+n2+'">'+cateList[i].replace(/<[^>].*?>/g,"")+'</a></dd>';
+                temp += '<dd class="cate-item2"><span>'+n1+'.'+n2+' </span><a href="#'+n1+'_'+n2+'">'+cateList[i].replace(/<[^>].*?>/g,"")+'</a></dd>';
                 h3List[i2] = n1 + '_' + n2; // 设置标题名
                 i2++;
             }
@@ -97,6 +109,7 @@ jQuery.CateNav=function(elem1,elem2){
     };
     var init=function(){
         removeBlankNode();
+        addNavTitle();
         addNav();
         addPoint();
         clickPoint();
